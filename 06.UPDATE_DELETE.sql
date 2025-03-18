@@ -70,7 +70,7 @@ SELECT * FROM producto;
 -- Reducir en un 5% el precio de los productos cuyo precio sea mayor a 500.
 UPDATE producto
 SET precio = precio - (precio * 0.05)
-WHERE precio >500;
+WHERE precio > 500;
 SELECT * FROM producto;
 
 -- Actualizar la categoría del producto "Monitor" a "Electrónica".
