@@ -75,11 +75,11 @@ SELECT rating, COUNT(film_id) AS NumPeliculas FROM film GROUP BY rating;
 
 -- Liste los clientes que han realizado pagos con un monto promedio mayor a $5
 SELECT customer_id, AVG(amount) AS Monto_Promedio FROM payment 
-GROUP BY customer_id HAVING Monto_Promedio>5;
+GROUP BY customer_id HAVING Monto_Promedio > 5;
 
 -- Calcule la cantidad de películas en cada duración de renta (rental_duration) mayor a 5 días
 SELECT rental_duration AS Duracion, COUNT(film_id) AS Cantidad_Peliculas FROM film 
-GROUP BY rental_duration HAVING rental_duration>5;
+GROUP BY rental_duration HAVING rental_duration > 5;
 
 -- Calcule el total de pagos recibidos por cada mes, pero solo los meses con más de 100 pagos
 SELECT MONTH(payment_date) AS Mes, COUNT(payment_id) AS Total_Pagos_Resibidos FROM payment
