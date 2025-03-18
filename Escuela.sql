@@ -35,7 +35,7 @@ INSERT INTO materia(Nombre, Descripcion) VALUES
 ('Matematicas', 'Numeros y formulas');
 
 -- Tabla Maestro
-INSERT INTO maestro(Nombre, Edad, idGrupo) VALUES
+INSERT INTO maestro (Nombre, Edad, idGrupo) VALUES
 ('Andrea', 43, 1), 
 ('Jorge', 50, 2), 
 ('Luis', 39, 3), 
