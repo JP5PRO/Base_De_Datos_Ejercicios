@@ -53,7 +53,7 @@ INSERT INTO Nivel (Nombre, Duracion, Coleccionables, idMapa) VALUES
 ('Finales de finales de finales', '3min', 1, 15);
 
 -- Tabla Usuario
-INSERT INTO usuario (Nombre, Edad, Contraseña, nivelesCompletados, Correo, idJugador) VALUES
+INSERT INTO Usuario (Nombre, Edad, Contraseña, nivelesCompletados, Correo, idJugador) VALUES
 ('Juan Lopez', 18, 'Jplgood', 10, 'jp@gmail', 1),
 ('Maria Martina', 22, 'mm283', 100, 'MM@gmail', 2),
 ('Rodrigo Marin', 14, 'ehdb', 14, 'RodrixRaton@gmail', 3),
