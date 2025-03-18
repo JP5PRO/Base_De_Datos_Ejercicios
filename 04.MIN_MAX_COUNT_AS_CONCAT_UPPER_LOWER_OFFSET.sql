@@ -1,4 +1,4 @@
--- Actividad 12
+-- Actividad 13
 
 -- Obtener la fecha más antigua de alquiler
 SELECT MIN(rental_date) AS FechaMasAntigua FROM rental;
