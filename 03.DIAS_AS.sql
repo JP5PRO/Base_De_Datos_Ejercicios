@@ -1,3 +1,4 @@
+-- Actividad 12
 /*Calcularemos el porcentaje de comisión del mes de mayo del empleado
 con id=2 aplicando un 10% al monto de las rentas
 */
