@@ -1,3 +1,4 @@
+-- Actividad 10
 -- Liste los registros de la tabla de actor que tienen first_name=‘PENELOPE’
 SELECT * FROM actor WHERE first_name="PENELOPE";
 
