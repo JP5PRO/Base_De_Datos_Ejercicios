@@ -1,3 +1,4 @@
+-- Actividad 11
 -- Liste los registros de la tabla de actor con actor_id entre 10 y 20 o entre 30 y 40 o entre 50 y 60
 SELECT * FROM actor WHERE (actor_id BETWEEN 10 AND 20) OR 
 (actor_id BETWEEN 30 AND 40) OR (actor_id BETWEEN 50 AND 60);
