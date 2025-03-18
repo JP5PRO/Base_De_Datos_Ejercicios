@@ -12,7 +12,7 @@ INSERT INTO Equipo (Nombre, numIntegrantes, Ganadas, Perdidas, Empates, Puntos) 
 ('Necaxa', 12, 6, 7, 3, 21),
 ('Tigres', 12, 11, 2, 3, 33),
 ('Panteras', 13, 9, 4, 3, 30),
-('Guepardos', 11, 5, 8, 3, 18),
+('America', 11, 5, 8, 3, 18),
 ('Cruz Azul', 12, 8, 4, 4, 28),
 ('Zorros', 12, 8, 3, 4, 27);
 
