@@ -91,10 +91,10 @@ GROUP BY s.staff_id HAVING  SUM(p.amount) > 100;
 SELECT c.customer_id ,CONCAT(c.first_name, '', c.last_name) AS Cliente, SUM(p.amount) AS Pagos_Realizados_Junio, p.payment_date
 FROM customer c
 JOIN payment p ON c.customer_id = p.customer_id
-GROUP BY c.customer_id HAVING MONTH(p.payment_date) = 5;
+GROUP BY c.customer_id HAVING MONTH(p.payment_date) = 6;
 
 -- Calcule la cantidad de películas por cada duración de renta (rental_duration) 
-SELECT rental_duration, (film_id) AS cantidad_Peliculas  
+SELECT rental_duration, COUNT(film_id) AS cantidad_Peliculas  
 FROM film GROUP BY rental_duration;
 
 -- Calcule la cantidad total de pagos recibidos cada año 
@@ -110,7 +110,7 @@ SELECT DAY(payment_date) AS Dia, SUM(amount) AS Pagos
 FROM payment GROUP BY DAY(payment_date) HAVING SUM(amount) > 50;
 
 -- Calcule cuántas películas hay en cada duración (length) específica
-SELECT length, (film_id) AS NumPeliculas
+SELECT length, COUNT(film_id) AS NumPeliculas
 FROM film GROUP BY length;
 
 -- Calcule la cantidad de pagos realizados en cada tienda
@@ -126,7 +126,7 @@ solo para aquellos que han realizado más de 5 pagos
 SELECT c.customer_id, SUM(p.amount) AS monto_total
 FROM payment p
 JOIN customer c ON p.customer_id = c.customer_id 
-GROUP BY c.customer_id;
+GROUP BY c.customer_id HAVING COUNT(p.payment_id) > 5;
 
 /*Calcule el número de películas (puede haber mas de 1 película 
 por cada titulo) según su clasificación (rating) 
